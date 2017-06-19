@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>StatiCrypt: Password protect static HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w="
+              crossorigin="anonymous" />
+        <link rel="stylesheet"
+              href="./styles.css" />
+    </head>
+    <body>
+        <div class="container container_narrow">
+            <form>
+                <div class="form-group">
+                    <label for="passPhrase">Пароль</label>
+                    <input type="password"
+                           class="form-control"
+                           id="passPhrase"
+                           placeholder="Пароль">
+                </div>
+                <div class="form-group">
+                    <label for="htmlText">HTML</label>
+                    <textarea class="form-control"
+                              id="htmlText"
+                              placeholder="HTML код"
+                              rows="8"></textarea>
+                </div>
+                <button type="button"
+                        class="btn btn-primary">Сгенерировать код</button>
+            </form>
+            <a href="./index.html">&lt; Назад</a>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"
+                integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw="
+                crossorigin="anonymous"></script>
+    </body>
+</html>

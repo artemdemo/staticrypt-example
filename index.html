@@ -7,35 +7,15 @@
               href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
               integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w="
               crossorigin="anonymous" />
-        <style>
-            body {
-                padding-top: 20px;
-            }
-            .container_narrow {
-                max-width: 700px;
-            }
-        </style>
+        <link rel="stylesheet"
+              href="./styles.css" />
     </head>
     <body>
         <div class="container container_narrow">
-            <div class="jumbotron">
-                <h1>Введите пароль</h1>
-                <p class="lead">
-                    Эта страница защищена паролем, введите его ниже, чтобы получить доступ к содержанию.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="password"
-                               class="form-control"
-                               id="enterPassword"
-                               placeholder="Password">
-                    </div>
-                    <button class="btn btn-lg btn-success">Перейти</button>
-                </form>
-            </div>
+            <ul>
+                <li><a href="./pwd.html">Пример ввода пароля</a></li>
+                <li><a href="./encrypt.html">Пример шифрования</a></li>
+            </ul>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"
-                integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw="
-                crossorigin="anonymous"></script>
     </body>
 </html>
