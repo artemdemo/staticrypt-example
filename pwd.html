@@ -17,11 +17,10 @@
                 <p class="lead">
                     Эта страница защищена паролем, введите его ниже, чтобы получить доступ к содержанию.
                 </p>
-                <form>
+                <form class="decryptHtml">
                     <div class="form-group">
                         <input type="password"
-                               class="form-control"
-                               id="enterPassword"
+                               class="form-control decryptHtmlInput"
                                placeholder="Password">
                     </div>
                     <button class="btn btn-lg btn-success">Перейти</button>
@@ -29,8 +28,6 @@
             </div>
             <a href="./index.html">&lt; Назад</a>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"
-                integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw="
-                crossorigin="anonymous"></script>
+        <script src="./scripts.js"></script>
     </body>
 </html>

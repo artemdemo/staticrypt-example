@@ -12,28 +12,28 @@
     </head>
     <body>
         <div class="container container_narrow">
-            <form>
+            <form class="encryptHtml">
                 <div class="form-group">
                     <label for="passPhrase">Пароль</label>
                     <input type="password"
-                           class="form-control"
+                           class="form-control encryptHtmlInput"
                            id="passPhrase"
-                           placeholder="Пароль">
+                           placeholder="Введите пароль">
                 </div>
                 <div class="form-group">
                     <label for="htmlText">HTML</label>
-                    <textarea class="form-control"
+                    <textarea class="form-control encryptHtmlTextarea"
                               id="htmlText"
                               placeholder="HTML код"
                               rows="8"></textarea>
                 </div>
-                <button type="button"
-                        class="btn btn-primary">Сгенерировать код</button>
+                <p>
+                    <button class="btn btn-primary">Сгенерировать код</button>
+                </p>
+                <div class="pre encryptHtmlCode"></div>
             </form>
             <a href="./index.html">&lt; Назад</a>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"
-                integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw="
-                crossorigin="anonymous"></script>
+        <script src="./scripts.js"></script>
     </body>
 </html>
