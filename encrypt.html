@@ -19,6 +19,7 @@
                            class="form-control encryptHtmlInput"
                            id="passPhrase"
                            placeholder="Введите пароль"
+                           disabled
                            required>
                 </div>
                 <div class="form-group">
@@ -27,12 +28,13 @@
                               id="htmlText"
                               placeholder="HTML код"
                               rows="8"
+                              disabled
                               required></textarea>
                 </div>
                 <p>
                     <button class="btn btn-primary">Сгенерировать код</button>
                 </p>
-                <div class="pre encryptHtmlCode"></div>
+                <div class="encrypted encryptHtmlCode"></div>
             </form>
             <a href="./index.html">&lt; Назад</a>
         </div>

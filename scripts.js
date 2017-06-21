@@ -11,6 +11,7 @@
             this.decryptHtmlInputEl = decryptHtmlEl.querySelector('.decryptHtmlInput');
             this.submit = this.submit.bind(this);
             decryptHtmlEl.addEventListener('submit', this.submit);
+            this.decryptHtmlInputEl.disabled = false;
         }
 
         submit(e) {
@@ -39,6 +40,8 @@
             this.encryptHtmlCodeEl = encryptHtmlEl.querySelector('.encryptHtmlCode');
             this.submit = this.submit.bind(this);
             encryptHtmlEl.addEventListener('submit', this.submit);
+            this.encryptHtmlInputEl.disabled = false;
+            this.encryptHtmlTextareaEl.disabled = false;
         }
 
         submit(e) {
