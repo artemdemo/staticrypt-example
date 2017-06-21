@@ -1,5 +1,3 @@
-let cryptoApp;
-
 (() => {
     class Form {
         submit(e) {
@@ -58,8 +56,8 @@ let cryptoApp;
 
     let decryptHtmlEl = null;
     let encryptHtmlEl = null;
-    
-    cryptoApp = {
+
+    const cryptoApp = {
         init: () => {
             const cryptoJsScript = document.createElement('script');
             cryptoJsScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js';
@@ -78,6 +76,6 @@ let cryptoApp;
             }
         },
     };
-})();
 
-document.addEventListener('DOMContentLoaded', cryptoApp.init());
+    document.addEventListener('DOMContentLoaded', cryptoApp.init());
+})();
